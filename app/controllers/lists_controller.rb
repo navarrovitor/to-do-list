@@ -1,10 +1,17 @@
 class ListsController < ApplicationController
+    before_action :set_list, only: [:show]
+
     def index
         @lists = List.all
     end
 
     def show
-        @list = List.find(params[:id])
         @item = Item.new
+    end
+
+    private
+
+    def set_list
+        @list = List.find(params[:id])
     end
 end

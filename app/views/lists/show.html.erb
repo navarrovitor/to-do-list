@@ -1,11 +1,11 @@
-<h1><%= @list.name %> <small><%= @list.author %></small></h1>
-<h2><%= pluralize @list.items.size, "item" %></h2>
+<h1><%= @list.name %> - <small><%= @list.author %></small></h1>
+<h2><%= pluralize @list.items.size, "itens" %></h2>
 <div>
   <% if @list.items.blank? %>
-    Be the first to leave a item for <%= @list.name %>
+    Adicione um item para a lista <%= @list.name %>
   <% else %>
     <% @list.items.each do |item| %>
-      <p><%= item.content %></p>
+      <p><%= item.title %> - <%= item.description %></p>
     <% end %>
   <% end %>
 </div>

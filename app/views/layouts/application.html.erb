@@ -10,6 +10,10 @@
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
   <body>
-    <%= yield %>
+    <%= render "shared/navbar" %>
+    <div class="container mt-5">
+      <%= yield %>
+    </div>
+    <%= render "shared/footer" %>
   </body>
 </html>

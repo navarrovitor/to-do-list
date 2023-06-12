@@ -1,27 +1,24 @@
-<h1>Your lists</h1>
-<div class="container">
-  <% if @lists.blank? %>
-    Adicione uma lista!
-  <% else %>
-    <div class="row justify-content-space-evenly align-items-center">
-      <% @lists.each do |list| %>
-        <div class="col-6 col-lg-3">
-          <a href="<%= list_path(list) %>" style="text-decoration: none;">
-            <div class="card">
-              <h3 class="card-title"><%= list.name %></h3>
-              <p class="card-author"><%= list.author %></p>
-              <ul>
-                <% list.items.each do |item| %>
-                  <li class="card-item">
-                    <%= item.title %>
-                  </li>
-                <% end %>
-              </ul>
-            </div>
-          </a>
-        </div>
-      <% end %>
-    </div>
-  <% end %>
-</div>
+<% if @lists.blank? %>
+  Adicione uma lista!
+<% else %>
+  <div class="row justify-content-space-evenly">
+    <% @lists.each do |list| %>
+      <div class="col-6 col-lg-3 col-xl-2">
+        <a href="<%= list_path(list) %>" style="text-decoration: none;">
+          <div class="card">
+            <h3 class="card-title"><%= list.name %></h3>
+            <p class="card-author"><%= list.author %></p>
+            <ul>
+              <% list.items.each do |item| %>
+                <li class="card-item">
+                  <%= item.title %>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+        </a>
+      </div>
+    <% end %>
+  </div>
+<% end %>
 <%= link_to "New list", new_list_path %>

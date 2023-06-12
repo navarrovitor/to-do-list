@@ -2,7 +2,7 @@
 <h2><%= pluralize @list.items.size, "itens" %></h2>
 <div>
   <% if @list.items.blank? %>
-    Adicione um item para a lista <%= @list.name %>
+    Adicione um item para a lista!
   <% else %>
     <% @list.items.each do |item| %>
       <p><%= item.title %> - <%= item.description %></p>

@@ -1,6 +1,11 @@
 <h1>Lists</h1>
 <ul>
-  <% @lists.each do |list| %>
-    <li><%= link_to list.name, list_path(list) %> - <%= list.author %></li>
+  <% if @lists.blank? %>
+    Adicione uma lista!
+  <% else %>
+    <% @lists.each do |list| %>
+      <li><%= link_to list.name, list_path(list) %> - <%= list.author %></li>
+    <% end %>
   <% end %>
 </ul>
+<%= link_to "New list", new_list_path %>

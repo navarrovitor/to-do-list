@@ -21,4 +21,8 @@
     <% end %>
   </div>
 <% end %>
-<%= link_to "New list", new_list_path %>
+<div class="button-pencil-container">
+  <%= link_to new_list_path, class: "button-pencil" do %>
+    <i class="fa-regular fa-pen-to-square"></i>
+  <% end %>
+</div>

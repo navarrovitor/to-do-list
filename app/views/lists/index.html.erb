@@ -8,9 +8,9 @@
           <div class="card">
             <h3 class="card-title"><%= list.name %></h3>
             <p class="card-author"><%= list.author %></p>
-            <ul>
+            <ul class="p-0 mt-2">
               <% list.items.each do |item| %>
-                <li class="card-item">
+                <li class="card-item" style="list-style-type: none;">
                   <%= item.title %>
                 </li>
               <% end %>

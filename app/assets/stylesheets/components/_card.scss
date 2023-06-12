@@ -1,4 +1,4 @@
-.mt-5{
+.mt-5 {
   margin-top: ($spacer * 6) !important;
 }
 
@@ -22,10 +22,10 @@
 .card::before {
   content: "";
   position: absolute;
-  top: -16px; 
-  left: -16px; 
-  width: calc(100% + 32px);  
-  height: calc(100% + 16px);  
+  top: -16px;
+  left: -16px;
+  width: calc(100% + 32px);
+  height: calc(100% + 16px);
   background-color: mix($periwinkle, $lavender, 30%);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -33,7 +33,7 @@
 }
 
 .card:hover::before {
-  opacity: 1; 
+  opacity: 1;
 }
 
 .card-title {
@@ -44,9 +44,9 @@
 
 .card-author {
   background-color: $magnolia;
-  padding: 8px;
-  border-radius: 4px;
   font-size: 14px;
+  margin: 0 -16px;
+  padding: 4px 16px;
 }
 
 .card-item {

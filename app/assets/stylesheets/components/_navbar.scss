@@ -6,10 +6,16 @@
   background-color: $thistle;
   padding: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 
 .navbar-text {
   font-size: 18px;
-  color: rgba(0, 0, 0, 0.3);
+  color: black;
+  opacity: 0.5;
   font-weight: bold;
+}
+
+.navbar-text:hover {
+  opacity: 1;
 }

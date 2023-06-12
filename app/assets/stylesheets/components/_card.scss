@@ -1,7 +1,3 @@
-.mt-5 {
-  margin-top: ($spacer * 6) !important;
-}
-
 .card {
   width: 100%;
   max-width: 400px;
@@ -43,10 +39,11 @@
 }
 
 .card-author {
-  background-color: $magnolia;
+  background-color: $lavender;
+  opacity: 0.5;
   font-size: 14px;
   margin: 0 -16px;
-  padding: 4px 16px;
+  padding: 8px 16px;
 }
 
 .card-item {

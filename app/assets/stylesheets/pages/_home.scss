@@ -2,3 +2,8 @@
 body {
   background: $champagne-pink; // Using this variable
 }
+
+.my-5 {
+  margin-top: ($spacer * 6) !important;
+  margin-bottom: ($spacer * 6) !important;
+}

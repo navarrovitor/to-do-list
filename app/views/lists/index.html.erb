@@ -21,6 +21,15 @@
     <% end %>
   </div>
 <% end %>
+<%# <div class="card" data-controller="list-modal" data-list-id="= list.id" data-action="click->list-modal#showModal"> %>
+<%# <div id="listModal" class="modal" data-target="list-modal.modal" data-action="click->list-modal#hideModal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 data-target="list-modal.title" class="modal-title"></h2>
+    <p data-target="list-modal.author" class="modal-author"></p>
+    <ul data-target="list-modal.items" class="modal-items"></ul>
+  </div>
+</div> %>
 <div class="button-pencil-container">
   <%= link_to new_list_path, class: "button-pencil" do %>
     <i class="fa-regular fa-pen-to-square"></i>

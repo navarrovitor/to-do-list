@@ -1,9 +1,8 @@
 .button-pencil-container {
-  /* Position the container fixed */
   position: fixed;
   bottom: 60px;
   right: 20px;
-  z-index: 9999; /* Ensure the button stays on top of other elements */
+  z-index: 1;
 }
 
 .button-pencil {

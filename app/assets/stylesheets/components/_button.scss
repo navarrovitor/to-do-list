@@ -1,6 +1,6 @@
 .btn-pencil-container {
   position: fixed;
-  bottom: 60px;
+  bottom: 80px;
   right: 20px;
   z-index: 1;
 }
@@ -25,6 +25,6 @@
   background-color: $periwinkle;
 }
 
-.btn-search {
-  background-color: $thistle;
+.btn-primary {
+  background-color: $thistle !important;
 }

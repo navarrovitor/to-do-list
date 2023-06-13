@@ -3,6 +3,10 @@ class ListsController < ApplicationController
 
     def index
         @lists = List.all
+        if params[:query].present?
+            sql_subquery = "name @@ :query OR author @@ :query"
+            @lists = @lists.where(sql_subquery, query: "%#{params[:query]}%")
+        end
     end
 
     def show

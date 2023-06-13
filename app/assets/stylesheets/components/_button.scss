@@ -1,11 +1,11 @@
-.button-pencil-container {
+.btn-pencil-container {
   position: fixed;
   bottom: 60px;
   right: 20px;
   z-index: 1;
 }
 
-.button-pencil {
+.btn-pencil {
   border: none;
   display: inline-flex;
   align-items: center;
@@ -21,6 +21,10 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.button-pencil:hover {
+.btn-pencil:hover {
   background-color: $periwinkle;
+}
+
+.btn-search {
+  background-color: $thistle;
 }
